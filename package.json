@@ -1,0 +1,43 @@
+{
+  "name": "@yourname-space/shared-module-template",
+  "version": "1.0.0",
+  "description": "A shared module for shared resources and operations across backend services.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gaju91/shared-module-template.git"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist/",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "nestjs",
+    "typeorm",
+    "database",
+    "shared",
+    "module"
+  ],
+  "author": "Gajanand Sharma <gajanand742@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/common": "^10.3.7",
+    "@nestjs/core": "^10.3.7",
+    "pg": "^8.11.4",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.2",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/core": "^10.0.0"
+  }
+}
